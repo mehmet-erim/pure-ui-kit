@@ -1,0 +1,23 @@
+{
+  "name": "pure-ui-kit",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "live-server",
+    "complie:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmet-erim/pure-ui-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehmet-erim/pure-ui-kit/issues"
+  },
+  "homepage": "https://github.com/mehmet-erim/pure-ui-kit",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.10.0"
+  }
+}
