@@ -1,3 +1,18 @@
+.bg-primary {
+  background-color: #2196F3; }
+
+.bg-secondary {
+  background-color: #9E9E9E; }
+
+.bg-success {
+  background-color: #4CAF50; }
+
+.bg-danger {
+  background-color: #F44336; }
+
+.bg-warning {
+  background-color: #FF9800; }
+
 .margin-top, .margin-top-md {
   margin-top: calc(1.25 * 1rem); }
 
@@ -64,6 +79,105 @@
 .margin-bottom-xxxxl {
   margin-bottom: calc(13.75 * 1rem); }
 
+.margin-x, .margin-x-md {
+  margin: 0 calc(1.25 * 1rem); }
+
+.margin-x-xxxxs {
+  margin: 0 calc(0.125 * 1rem); }
+
+.margin-x-xxxs {
+  margin: 0 calc(0.25 * 1rem); }
+
+.margin-x-xxs {
+  margin: 0 calc(0.375 * 1rem); }
+
+.margin-x-xs {
+  margin: 0 calc(0.5 * 1rem); }
+
+.margin-x-sm {
+  margin: 0 calc(0.75 * 1rem); }
+
+.margin-x-lg {
+  margin: 0 calc(2 * 1rem); }
+
+.margin-x-xl {
+  margin: 0 calc(3.25 * 1rem); }
+
+.margin-x-xxl {
+  margin: 0 calc(5.25 * 1rem); }
+
+.margin-x-xxxl {
+  margin: 0 calc(8.5 * 1rem); }
+
+.margin-x-xxxxl {
+  margin: 0 calc(13.75 * 1rem); }
+
+.margin-y, .margin-y-md {
+  margin: calc(1.25 * 1rem) 0; }
+
+.margin-y-xxxxs {
+  margin: calc(0.125 * 1rem) 0; }
+
+.margin-y-xxxs {
+  margin: calc(0.25 * 1rem) 0; }
+
+.margin-y-xxs {
+  margin: calc(0.375 * 1rem) 0; }
+
+.margin-y-xs {
+  margin: calc(0.5 * 1rem) 0; }
+
+.margin-y-sm {
+  margin: calc(0.75 * 1rem) 0; }
+
+.margin-y-lg {
+  margin: calc(2 * 1rem) 0; }
+
+.margin-y-xl {
+  margin: calc(3.25 * 1rem) 0; }
+
+.margin-y-xxl {
+  margin: calc(5.25 * 1rem) 0; }
+
+.margin-y-xxxl {
+  margin: calc(8.5 * 1rem) 0; }
+
+.margin-y-xxxxl {
+  margin: calc(13.75 * 1rem) 0; }
+
+.margin, .margin-md {
+  margin: calc(1.25 * 1rem); }
+
+.margin-xxxxs {
+  margin: calc(0.125 * 1rem); }
+
+.margin-xxxs {
+  margin: calc(0.25 * 1rem); }
+
+.margin-xxs {
+  margin: calc(0.375 * 1rem); }
+
+.margin-xs {
+  margin: calc(0.5 * 1rem); }
+
+.margin-sm {
+  margin: calc(0.75 * 1rem); }
+
+.margin-lg {
+  margin: calc(2 * 1rem); }
+
+.margin-xl {
+  margin: calc(3.25 * 1rem); }
+
+.margin-xxl {
+  margin: calc(5.25 * 1rem); }
+
+.margin-xxxl {
+  margin: calc(8.5 * 1rem); }
+
+.margin-xxxxl {
+  margin: calc(13.75 * 1rem); }
+
 body {
   padding: 0;
   margin: 0; }
@@ -118,6 +232,60 @@ h4, .text-md {
     opacity: 1;
     visibility: visible;
     transform: translateY(0); }
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  font-size: calc(calc(calc(1em / 1.2 / 1.2) * 1.2) * 1.2 * 1.2);
+  outline: 0;
+  border: none;
+  border-radius: 0.25rem;
+  display: inline-block;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  padding: 0 1rem;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+  .btn.btn-primary {
+    background-color: #2196F3; }
+    .btn.btn-primary:hover {
+      background-color: #39a1f4; }
+  .btn.btn-secondary {
+    background-color: #9E9E9E; }
+    .btn.btn-secondary:hover {
+      background-color: #ababab; }
+  .btn.btn-success {
+    background-color: #4CAF50; }
+    .btn.btn-success:hover {
+      background-color: #5cb860; }
+  .btn.btn-warning {
+    background-color: #FF9800; }
+    .btn.btn-warning:hover {
+      background-color: #ffa21a; }
+  .btn.btn-danger {
+    background-color: #F44336; }
+    .btn.btn-danger:hover {
+      background-color: #f55a4e; }
+  .btn:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 2px 4px 5px 0 rgba(0, 0, 0, 0.2); }
+  .btn:focus {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 2px 4px 5px 0 rgba(0, 0, 0, 0.2); }
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s; }
+  .ripple:hover {
+    background: rgba(255, 255, 255, 0.1) radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.1) 1%) center/15000%; }
+  .ripple:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 100%;
+    transition: background 0s; }
 
 nav {
   background-color: #333;

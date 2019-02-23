@@ -1,0 +1,79 @@
+.btn {
+  text-decoration: none;
+  color: $color-white;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  font-size: $text-md;
+  outline: 0;
+
+  border: none;
+  border-radius: 0.25rem;
+  display: inline-block;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  padding: 0 1rem;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+  &.btn-primary {
+    background-color: $color-primary;
+    &:hover {
+      background-color: lighten($color-primary, 5);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $color-secondary;
+    &:hover {
+      background-color: lighten($color-secondary, 5);
+    }
+  }
+  
+  &.btn-success {
+    background-color: $color-success;
+    &:hover {
+      background-color: lighten($color-success, 5);
+    }
+  }
+  
+  &.btn-warning {
+    background-color: $color-warning;
+    &:hover {
+      background-color: lighten($color-warning, 5);
+    }
+  }
+  
+  &.btn-danger {
+    background-color: $color-danger;
+    &:hover {
+      background-color: lighten($color-danger, 5);
+    }
+  }
+
+  &:hover {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 2px 4px 5px 0 rgba(0,0,0,0.2);
+}
+
+  &:focus {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 2px 4px 5px 0 rgba(0,0,0,0.2);
+}
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1) radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.1) 1%) center/15000%;
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}

@@ -100,3 +100,140 @@ $space-unit: 1rem;
 .margin-bottom-xxxxl {
   margin-bottom: $space-xxxxl;
 }
+
+// margin x
+
+.margin-x, .margin-x-md {
+  margin: 0 $space-md
+}
+
+.margin-x-xxxxs {
+  margin: 0 $space-xxxxs
+}
+
+.margin-x-xxxs {
+  margin: 0 $space-xxxs
+}
+
+.margin-x-xxs {
+  margin: 0 $space-xxs
+}
+
+.margin-x-xs {
+  margin: 0 $space-xs
+}
+
+.margin-x-sm {
+  margin: 0 $space-sm
+}
+
+.margin-x-lg {
+  margin: 0 $space-lg
+}
+
+.margin-x-xl {
+  margin: 0 $space-xl
+}
+
+.margin-x-xxl {
+  margin: 0 $space-xxl
+}
+
+.margin-x-xxxl {
+  margin: 0 $space-xxxl
+}
+
+.margin-x-xxxxl {
+  margin: 0 $space-xxxxl;
+}
+
+// margin y
+
+.margin-y, .margin-y-md {
+  margin: $space-md 0;
+}
+
+.margin-y-xxxxs {
+  margin:  $space-xxxxs 0;
+}
+
+.margin-y-xxxs {
+  margin: $space-xxxs 0;
+}
+
+.margin-y-xxs {
+  margin: $space-xxs 0;
+}
+
+.margin-y-xs {
+  margin: $space-xs 0;
+}
+
+.margin-y-sm {
+  margin: $space-sm 0;
+}
+
+.margin-y-lg {
+  margin: $space-lg 0;
+}
+
+.margin-y-xl {
+  margin: $space-xl 0;
+}
+
+.margin-y-xxl {
+  margin: $space-xxl 0;
+}
+
+.margin-y-xxxl {
+  margin: $space-xxxl 0;
+}
+
+.margin-y-xxxxl {
+  margin: $space-xxxxl 0;
+}
+
+
+.margin, .margin-md {
+  margin: $space-md;
+}
+
+.margin-xxxxs {
+  margin:  $space-xxxxs;
+}
+
+.margin-xxxs {
+  margin: $space-xxxs;
+}
+
+.margin-xxs {
+  margin: $space-xxs;
+}
+
+.margin-xs {
+  margin: $space-xs;
+}
+
+.margin-sm {
+  margin: $space-sm;
+}
+
+.margin-lg {
+  margin: $space-lg;
+}
+
+.margin-xl {
+  margin: $space-xl;
+}
+
+.margin-xxl {
+  margin: $space-xxl;
+}
+
+.margin-xxxl {
+  margin: $space-xxxl;
+}
+
+.margin-xxxxl {
+  margin: $space-xxxxl;
+}

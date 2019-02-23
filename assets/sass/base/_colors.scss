@@ -1,4 +1,9 @@
 $color-white: #fff;
+$color-primary: #2196F3;
+$color-secondary: #9E9E9E;
+$color-success: #4CAF50;
+$color-danger: #F44336;
+$color-warning: #FF9800;
 
 $color-bg: hsl(0, 0%, 100%);
 $color-bg-a00: hsla(0, 0%, 100%, 0);
@@ -8,3 +13,23 @@ $color-contrast-medium: hsl(240, 1%, 48%);
 $color-contrast-high: hsl(240, 4%, 20%);
 $color-contrast-higher: hsl(240, 8%, 12%);
 $color-contrast-higher-a90: hsla(240, 8%, 12%, 0.9);
+
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+}
+
+.bg-success {
+  background-color: $color-success;
+}
+
+.bg-danger {
+  background-color: $color-danger;
+}
+
+.bg-warning {
+  background-color: $color-warning;
+}
