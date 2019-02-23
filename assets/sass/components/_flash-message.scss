@@ -1,0 +1,25 @@
+.flash-message {
+  position:fixed;
+  top: $space-md;
+  right: $space-md;
+  z-index: $zindex-fixed-element;
+  
+  background-color: $color-white;
+  padding: $space-sm;
+  box-shadow: 0 1px 1px rgba(#000, 0.2), 0 1px 8px rgba(#000, 0.1);
+  border-radius: 0.25rem;
+  color: $color-contrast-high;
+  font-size: $text-sm;
+
+    transition: .2s;
+    transform: translateY(-16px);
+    transform-origin: bottom left;
+    opacity: 0;
+    visibility: hidden;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

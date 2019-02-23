@@ -1,0 +1,56 @@
+$font-primary: sans-serif;
+
+//body font size
+$text-base-size: 1em;
+
+$text-scale-ratio: 1.2;
+
+$text-xs: calc(1em / #{$text-scale-ratio} / #{$text-scale-ratio});
+$text-sm: calc(#{$text-xs} * #{$text-scale-ratio});
+$text-md: calc(#{$text-sm} * #{$text-scale-ratio} * #{$text-scale-ratio});
+$text-lg: calc(#{$text-md} * #{$text-scale-ratio});
+$text-xl: calc(#{$text-lg} * #{$text-scale-ratio});
+$text-xxl: calc(#{$text-xl} * #{$text-scale-ratio});
+$text-xxxl: calc(#{$text-xxl} * #{$text-scale-ratio});
+
+$body-line-height: 1.4;
+$heading-line-height: 1.2;
+
+body {
+  font-size: $text-base-size;
+  font-family: $font-primary;
+  color: $color-contrast-high;
+}
+
+h1, h2, h3, h4 {
+  color: $color-contrast-higher;
+  line-height: $heading-line-height;
+}
+
+.text-xxxl {
+  font-size:$text-xxxl;
+}
+
+h1, .text-xxl {
+  font-size:$text-xxl;
+}
+
+h2, .text-xl {
+  font-size:$text-xl;
+}
+
+h3, .text-lg {
+  font-size:$text-lg;
+}
+
+h4, .text-md {
+  font-size:$text-md;
+}
+
+.text-sm, small {
+  font-size:$text-sm;
+}
+
+.text-xs {
+  font-size:$text-xs;
+}
