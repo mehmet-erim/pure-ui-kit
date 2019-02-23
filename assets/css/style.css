@@ -235,7 +235,7 @@ h4, .text-md {
 
 .btn {
   text-decoration: none;
-  color: #fff;
+  color: #313135;
   text-align: center;
   letter-spacing: .5px;
   transition: all .2s ease-in-out;
@@ -252,22 +252,27 @@ h4, .text-md {
   -webkit-tap-highlight-color: transparent;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
   .btn.btn-primary {
+    color: #fff;
     background-color: #2196F3; }
     .btn.btn-primary:hover {
       background-color: #39a1f4; }
   .btn.btn-secondary {
+    color: #fff;
     background-color: #9E9E9E; }
     .btn.btn-secondary:hover {
       background-color: #ababab; }
   .btn.btn-success {
+    color: #fff;
     background-color: #4CAF50; }
     .btn.btn-success:hover {
       background-color: #5cb860; }
   .btn.btn-warning {
+    color: #fff;
     background-color: #FF9800; }
     .btn.btn-warning:hover {
       background-color: #ffa21a; }
   .btn.btn-danger {
+    color: #fff;
     background-color: #F44336; }
     .btn.btn-danger:hover {
       background-color: #f55a4e; }

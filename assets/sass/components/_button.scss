@@ -1,6 +1,6 @@
 .btn {
   text-decoration: none;
-  color: $color-white;
+  color: $color-contrast-high;
   text-align: center;
   letter-spacing: .5px;
   transition: all .2s ease-in-out;
@@ -20,6 +20,7 @@
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 
   &.btn-primary {
+  color: $color-white;
     background-color: $color-primary;
     &:hover {
       background-color: lighten($color-primary, 5);
@@ -27,6 +28,7 @@
   }
 
   &.btn-secondary {
+  color: $color-white;
     background-color: $color-secondary;
     &:hover {
       background-color: lighten($color-secondary, 5);
@@ -34,6 +36,7 @@
   }
   
   &.btn-success {
+  color: $color-white;
     background-color: $color-success;
     &:hover {
       background-color: lighten($color-success, 5);
@@ -41,6 +44,7 @@
   }
   
   &.btn-warning {
+  color: $color-white;
     background-color: $color-warning;
     &:hover {
       background-color: lighten($color-warning, 5);
@@ -48,6 +52,7 @@
   }
   
   &.btn-danger {
+  color: $color-white;
     background-color: $color-danger;
     &:hover {
       background-color: lighten($color-danger, 5);
