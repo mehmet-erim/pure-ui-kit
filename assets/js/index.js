@@ -24,12 +24,18 @@ function route ( component, importJs = false ) {
 }
 
 window.addEventListener( "hashchange", ( { newURL } ) => {
-  const path = newURL.substr( newURL.indexOf( '#/' ) + 2 );
-  route( path, path === 'flash-message' )
+  var pathIndex = newURL.indexOf( '#/' );
+  if ( pathIndex > -1 ) {
+    const path = newURL.substr( pathIndex + 2 );
+    route( path, path === 'flash-message' )
+  }
 }, false );
 
 window.addEventListener( 'load', function () {
   const { URL } = window.document;
-  const path = URL.substr( URL.indexOf( '#/' ) + 2 );
-  route( path, path === 'flash-message' )
+  const pathIndex = URL.indexOf( '#/' );
+  if ( pathIndex > -1 ) {
+    const path = URL.substr( URL.indexOf( '#/' ) + 2 );
+    route( path, path === 'flash-message' )
+  }
 }, false );
