@@ -15,7 +15,7 @@
   background-color: #ff9800; }
 
 body {
-  font-size: 1rem;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: #313135; }
 
@@ -27,30 +27,30 @@ h4 {
   line-height: 1.2; }
 
 .text-xxxl {
-  font-size: calc(calc(calc(calc(calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2) * 1.2) * 1.2) * 1.2) * 1.2); }
+  font-size: 3rem; }
 
 h1,
 .text-xxl {
-  font-size: calc(calc(calc(calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2) * 1.2) * 1.2) * 1.2); }
+  font-size: 2.5rem; }
 
 h2,
 .text-xl {
-  font-size: calc(calc(calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2) * 1.2) * 1.2); }
+  font-size: 2rem; }
 
 h3,
 .text-lg {
-  font-size: calc(calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2) * 1.2); }
+  font-size: 1.75rem; }
 
 h4,
 .text-md {
-  font-size: calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2); }
+  font-size: 1.5rem; }
 
 .text-sm,
 small {
-  font-size: calc(calc(1rem / 1.2 / 1.2) * 1.2); }
+  font-size: 0.75rem; }
 
 .text-xs {
-  font-size: calc(1rem / 1.2 / 1.2); }
+  font-size: 0.5rem; }
 
 .margin-top, .margin-top-md {
   margin-top: calc(1.25 * 1rem); }
@@ -244,17 +244,20 @@ small {
 .p-form-legend {
   color: #1c1c21;
   line-height: 1.2;
-  font-size: calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2);
+  font-size: 1.5rem;
   margin-bottom: calc(0.375 * 1rem); }
 
 .p-form-label {
   display: inline-block;
-  font-size: calc(calc(1rem / 1.2 / 1.2) * 1.2);
+  font-size: 0.75rem;
   margin-bottom: calc(0.25 * 1rem); }
 
 body {
   padding: 0;
   margin: 0; }
+
+.disabled {
+  color: #79797c !important; }
 
 .p-flash-message {
   position: fixed;
@@ -266,7 +269,7 @@ body {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   color: #313135;
-  font-size: calc(calc(1rem / 1.2 / 1.2) * 1.2);
+  font-size: 0.75rem;
   transition: 0.2s;
   transform: translateY(-16px);
   transform-origin: bottom left;
@@ -285,7 +288,7 @@ body {
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  font-size: calc(calc(calc(1rem / 1.2 / 1.2) * 1.2) * 1.2 * 1.2);
+  font-size: 1rem;
   outline: 0;
   border: none;
   border-radius: 0.25rem;
@@ -362,6 +365,26 @@ body {
       background-size: 100%;
       transition: background 0s; }
 
+.p-pagination {
+  display: flex;
+  list-style: none;
+  padding-left: 0; }
+  .p-pagination .link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2196f3;
+    background-color: #fff;
+    border: 1px solid #f2f2f2; }
+    .p-pagination .link.active {
+      background-color: #2196f3 !important;
+      color: #fff; }
+    .p-pagination .link:hover {
+      background-color: #f2f2f2; }
+
 .p-select {
   position: relative; }
   .p-select select {
@@ -385,7 +408,7 @@ body {
   border-radius: 2px;
   transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   display: inline-block;
-  font-size: calc(calc(1rem / 1.2 / 1.2) * 1.2);
+  font-size: 0.75rem;
   max-width: 200px;
   letter-spacing: normal;
   word-break: normal;

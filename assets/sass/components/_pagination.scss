@@ -1,0 +1,26 @@
+.p-pagination {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+
+  .link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: $color-primary;
+    background-color: $color-white;
+    border: 1px solid $color-contrast-lower;
+
+    &.active {
+      background-color: $color-primary !important;
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-contrast-lower;
+    }
+  }
+}

@@ -9,23 +9,22 @@ $screen-sm-max: ($screen-md-min - 1);
 $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1);
 
-$text-base-size: 1rem;
-
+$text-base-size: 14px;
 $text-scale-ratio: 1.2;
 
-$text-xs: calc(#{$text-base-size} / #{$text-scale-ratio} / #{$text-scale-ratio});
-$text-sm: calc(#{$text-xs} * #{$text-scale-ratio});
-$text-md: calc(#{$text-sm} * #{$text-scale-ratio} * #{$text-scale-ratio});
-$text-lg: calc(#{$text-md} * #{$text-scale-ratio});
-$text-xl: calc(#{$text-lg} * #{$text-scale-ratio});
-$text-xxl: calc(#{$text-xl} * #{$text-scale-ratio});
-$text-xxxl: calc(#{$text-xxl} * #{$text-scale-ratio});
+$text-xs: 0.5rem;
+$text-sm: 0.75rem;
+$text-md: 1.5rem;
+$text-lg: 1.75rem;
+$text-xl: 2rem;
+$text-xxl: 2.5rem;
+$text-xxxl: 3rem;
 
 $body-line-height: 1.4;
 $heading-line-height: 1.2;
 
 body {
-  font-size: $text-base-size;
+  font-size: 14px;
   font-family: $font-primary;
   color: $color-contrast-high;
 }
