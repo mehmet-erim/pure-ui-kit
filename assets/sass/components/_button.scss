@@ -1,6 +1,19 @@
-[class*="btn-"] {
+@mixin border {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    border: 1px solid rgba($color-primary, 0.4);
+    border-radius: 0.25rem;
+  }
+}
+
+[class^="p-btn"] {
+  position: relative;
   text-decoration: none;
-  color: $color-white;
+  color: $color-contrast-high;
   text-align: center;
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in-out;
@@ -19,35 +32,40 @@
 
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 
-  &.btn-primary {
+  &.p-btn-primary {
+    color: $color-white;
     background-color: $color-primary !important;
     &:hover {
       background-color: lighten($color-primary, 5) !important;
     }
   }
 
-  &.btn-secondary {
+  &.p-btn-secondary {
+    color: $color-white;
     background-color: $color-secondary !important;
     &:hover {
       background-color: lighten($color-secondary, 5) !important;
     }
   }
 
-  &.btn-success {
+  &.p-btn-success {
+    color: $color-white;
     background-color: $color-success !important;
     &:hover {
       background-color: lighten($color-success, 5) !important;
     }
   }
 
-  &.btn-warning {
+  &.p-btn-warning {
+    color: $color-white;
     background-color: $color-warning !important;
     &:hover {
       background-color: lighten($color-warning, 5) !important;
     }
   }
 
-  &.btn-danger {
+  &.p-btn-danger {
+    color: $color-white;
     background-color: $color-danger !important;
     &:hover {
       background-color: lighten($color-danger, 5) !important;
@@ -56,16 +74,19 @@
 
   &:hover {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 2px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: darken($color-white, 10) !important;
   }
 
   &:focus {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 2px 4px 5px 0 rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba($color-primary, 0.4);
+    @include border();
+  }
+  &:active {
+    @include border();
   }
 }
 
-/* Ripple effect */
-.ripple {
+.p-ripple {
   background-position: center;
   transition: background 0.8s;
 
@@ -77,5 +98,19 @@
     background-color: rgba(255, 255, 255, 0.1);
     background-size: 100%;
     transition: background 0s;
+  }
+
+  &-dark {
+    background-position: center;
+    transition: background 0.8s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1) radial-gradient(circle, transparent 1%, rgba(0, 0, 0, 0.1) 1%) center/15000%;
+    }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.1);
+      background-size: 100%;
+      transition: background 0s;
+    }
   }
 }

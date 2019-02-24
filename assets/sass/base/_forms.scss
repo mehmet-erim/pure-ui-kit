@@ -1,4 +1,4 @@
-.form-control {
+.p-form-control {
   padding: $space-xs $space-sm;
   background: $color-bg;
   border: 2px solid $color-contrast-low;
@@ -37,14 +37,14 @@
   }
 }
 
-.form-legend {
+.p-form-legend {
   color: $color-contrast-higher;
   line-height: 1.2;
   font-size: $text-md;
   margin-bottom: $space-xxs;
 }
 
-.form-label {
+.p-form-label {
   display: inline-block;
   font-size: $text-sm;
   margin-bottom: $space-xxxs;

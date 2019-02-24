@@ -1,6 +1,6 @@
 $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
 
-.tooltip {
+.p-tooltip {
   position: relative;
   background: $color-secondary;
   color: $color-white;
@@ -18,7 +18,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   white-space: normal;
   line-break: auto;
   word-wrap: break-word;
-  .arrow {
+  [class^="arrow"] {
     visibility: hidden;
     opacity: 0;
     border-left: solid 5px transparent;
@@ -27,14 +27,14 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     position: absolute;
     z-index: $zindex-overlay;
 
-    &.top {
+    &.arrow-top {
       visibility: visible;
       opacity: 1;
       top: -5px;
       left: 49%;
     }
 
-    &.bottom {
+    &.arrow-bottom {
       bottom: -5px;
       visibility: visible;
       opacity: 1;
@@ -42,7 +42,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
       transform: rotate(180deg);
     }
 
-    &.left {
+    &.arrow-left {
       left: -8px;
       visibility: visible;
       opacity: 1;
@@ -50,7 +50,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
       transform: rotate(-90deg);
     }
 
-    &.right {
+    &.arrow-right {
       right: -8px;
       visibility: visible;
       opacity: 1;

@@ -1,1 +1,1 @@
-document.querySelector( '.flash-message' ).classList.value += ' visible'
+document.querySelector( '.p-flash-message' ).classList.value += ' visible'

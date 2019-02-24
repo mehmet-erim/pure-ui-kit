@@ -1,4 +1,4 @@
-nav {
+.nav {
   background-color: #333;
   display: table;
   width: 100%;
@@ -18,10 +18,10 @@ nav {
       text-decoration: none;
 
       &.active {
-        background-color: #4CAF50;
+        background-color: #4caf50;
       }
     }
-    a:hover:not(.active){
+    a:hover:not(.active) {
       background-color: #111;
     }
   }
