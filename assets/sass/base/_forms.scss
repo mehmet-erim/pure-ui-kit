@@ -1,0 +1,51 @@
+.form-control {
+  padding: $space-xs $space-sm;
+  background: $color-bg;
+  border: 2px solid $color-contrast-low;
+  width: 100%;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px lighten($color-primary, 35);
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-contrast-medium;
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+    color: $color-contrast-medium;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color-contrast-medium;
+  }
+
+  &:-moz-placeholder {
+    color: $color-contrast-medium;
+  }
+
+  &.invalid {
+    border-color: $color-danger;
+
+    &:focus {
+      box-shadow: 0 0 0 3px lighten($color-danger, 35);
+    }
+  }
+}
+
+.form-legend {
+  color: $color-contrast-higher;
+  line-height: 1.2;
+  font-size: $text-md;
+  margin-bottom: $space-xxs;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: $text-sm;
+  margin-bottom: $space-xxxs;
+}

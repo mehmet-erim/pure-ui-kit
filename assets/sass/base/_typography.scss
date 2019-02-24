@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-$font-primary: 'Open Sans', sans-serif;
+$font-primary: "Open Sans", sans-serif;
 
-//body font size
-$text-base-size: 1em;
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+$text-base-size: 1rem;
 
 $text-scale-ratio: 1.2;
 
-$text-xs: calc(1em / #{$text-scale-ratio} / #{$text-scale-ratio});
+$text-xs: calc(#{$text-base-size} / #{$text-scale-ratio} / #{$text-scale-ratio});
 $text-sm: calc(#{$text-xs} * #{$text-scale-ratio});
 $text-md: calc(#{$text-sm} * #{$text-scale-ratio} * #{$text-scale-ratio});
 $text-lg: calc(#{$text-md} * #{$text-scale-ratio});
@@ -24,35 +30,43 @@ body {
   color: $color-contrast-high;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: $color-contrast-higher;
   line-height: $heading-line-height;
 }
 
 .text-xxxl {
-  font-size:$text-xxxl;
+  font-size: $text-xxxl;
 }
 
-h1, .text-xxl {
-  font-size:$text-xxl;
+h1,
+.text-xxl {
+  font-size: $text-xxl;
 }
 
-h2, .text-xl {
-  font-size:$text-xl;
+h2,
+.text-xl {
+  font-size: $text-xl;
 }
 
-h3, .text-lg {
-  font-size:$text-lg;
+h3,
+.text-lg {
+  font-size: $text-lg;
 }
 
-h4, .text-md {
-  font-size:$text-md;
+h4,
+.text-md {
+  font-size: $text-md;
 }
 
-.text-sm, small {
-  font-size:$text-sm;
+.text-sm,
+small {
+  font-size: $text-sm;
 }
 
 .text-xs {
-  font-size:$text-xs;
+  font-size: $text-xs;
 }

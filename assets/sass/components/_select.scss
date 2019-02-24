@@ -1,0 +1,19 @@
+$select-icon-size: 1rem;
+
+.select {
+  position: relative;
+
+  select {
+    padding-right: calc(#{$select-icon-size} + #{$space-sm} * 2);
+  }
+
+  .icon {
+    width: $select-icon-size;
+    height: $select-icon-size;
+    position: absolute;
+    right: $space-sm;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
