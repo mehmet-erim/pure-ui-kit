@@ -1,0 +1,70 @@
+$cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
+
+.tooltip {
+  position: relative;
+  background: $color-secondary;
+  color: $color-white;
+  padding: 6px 10px;
+  white-space: nowrap;
+  z-index: $zindex-overlay;
+  border-radius: 2px;
+  transition: opacity 0.2s $cubic, transform 0.2s $cubic;
+  display: inline-block;
+  font-size: $text-sm;
+  max-width: 200px;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  word-wrap: break-word;
+  &:before {
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px grey;
+    position: absolute;
+    z-index: $zindex-overlay;
+  }
+
+  &.top {
+    &:before {
+      visibility: visible;
+      opacity: 1;
+      top: -5px;
+      left: 49%;
+    }
+  }
+
+  &.bottom {
+    &:before {
+      bottom: -5px;
+      visibility: visible;
+      opacity: 1;
+      left: 49%;
+      transform: rotate(180deg);
+    }
+  }
+
+  &.left {
+    &:before {
+      left: -8px;
+      visibility: visible;
+      opacity: 1;
+      top: 47%;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.right {
+    &:before {
+      right: -8px;
+      visibility: visible;
+      opacity: 1;
+      top: 47%;
+      transform: rotate(90deg);
+    }
+  }
+}

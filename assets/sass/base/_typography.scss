@@ -1,4 +1,6 @@
-$font-primary: sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$font-primary: 'Open Sans', sans-serif;
 
 //body font size
 $text-base-size: 1em;

@@ -7,14 +7,23 @@ const importer = {
       script.addEventListener( 'load', () => resolve( script ), false );
       script.addEventListener( 'error', () => reject( script ), false );
       document.body.appendChild( script );
+      importer.loaded.push( url )
     } );
   },
   urls: ( urls ) => {
     return Promise.all( urls.map( importer.url ) );
-  }
+  },
+  loaded: [],
+  has: ( url ) => !!importer.loaded.find( u => u === url )
 };
 
 function route ( component, importJs = false ) {
+  ( document.querySelectorAll( '.navigation' ) || [] ).forEach( ( element ) => {
+    document.querySelector( `[href="${ element.hash }"]` ).classList.value = element.classList.value.replace( 'active', '' );
+  } );
+
+  document.querySelector( `[href="#/${ component }` ).classList.value += ' active';
+
   const xmlhttp = new XMLHttpRequest();
   xmlhttp.open( "GET", `./components/${ component }.html`, false );
   xmlhttp.send();
