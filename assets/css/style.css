@@ -365,6 +365,23 @@ body {
       background-size: 100%;
       transition: background 0s; }
 
+.p-card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .p-card .body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem; }
+
 .p-pagination {
   display: flex;
   list-style: none;
@@ -402,7 +419,7 @@ body {
   white-space: normal;
   line-break: auto;
   word-wrap: break-word; }
-  .p-popover .popover-header {
+  .p-popover .header {
     margin: 0;
     padding: 0.5rem 0.75rem;
     margin-bottom: 0.5rem;
@@ -410,7 +427,7 @@ body {
     color: #313135;
     background-color: #d3d3d4;
     border-bottom: 1px solid #313135; }
-  .p-popover .popover-body {
+  .p-popover .body {
     padding: 0.5rem 0.75rem; }
   .p-popover [class^="arrow"] {
     visibility: hidden;

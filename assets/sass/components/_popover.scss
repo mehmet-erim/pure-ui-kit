@@ -18,7 +18,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   line-break: auto;
   word-wrap: break-word;
 
-  .popover-header {
+  .header {
     margin: 0;
     padding: 0.5rem 0.75rem;
     margin-bottom: 0.5rem;
@@ -28,7 +28,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
     border-bottom: 1px solid $color-contrast-high;
   }
 
-  .popover-body {
+  .body {
     padding: 0.5rem 0.75rem;
   }
 
