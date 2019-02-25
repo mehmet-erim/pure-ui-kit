@@ -385,6 +385,65 @@ body {
     .p-pagination .link:hover {
       background-color: #f2f2f2; }
 
+.p-popover {
+  position: relative;
+  background: #f2f2f2;
+  color: #1c1c21;
+  white-space: nowrap;
+  z-index: 10;
+  border-radius: 2px;
+  transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  display: inline-block;
+  font-size: 0.75rem;
+  max-width: 200px;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  word-wrap: break-word; }
+  .p-popover .popover-header {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #313135;
+    background-color: #d3d3d4;
+    border-bottom: 1px solid #313135; }
+  .p-popover .popover-body {
+    padding: 0.5rem 0.75rem; }
+  .p-popover [class^="arrow"] {
+    visibility: hidden;
+    opacity: 0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px grey;
+    position: absolute;
+    z-index: 10; }
+    .p-popover [class^="arrow"].arrow-top {
+      visibility: visible;
+      opacity: 1;
+      top: -5px;
+      left: 49%; }
+    .p-popover [class^="arrow"].arrow-bottom {
+      bottom: -5px;
+      visibility: visible;
+      opacity: 1;
+      left: 49%;
+      transform: rotate(180deg); }
+    .p-popover [class^="arrow"].arrow-left {
+      left: -8px;
+      visibility: visible;
+      opacity: 1;
+      top: 47%;
+      transform: rotate(-90deg); }
+    .p-popover [class^="arrow"].arrow-right {
+      right: -8px;
+      visibility: visible;
+      opacity: 1;
+      top: 47%;
+      transform: rotate(90deg); }
+
 .p-select {
   position: relative; }
   .p-select select {
